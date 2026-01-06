@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avery</title>
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="header-logo">
+            <a href="index.html">
+                <img src="assets/images/avery-logo.png" alt="Clothing Market Logo">
+            </a>
+        </div>
+        <div class="nav-right">
+            <nav>
+                <a href="{{ url('/collection') }}" class="{{ request()->is('collection*') ? 'active' : '' }}">Collections</a>
+                <a href="{{ url('/contact') }}" class="{{ request()->is('contact*') ? 'active' : '' }}">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="home-hero">
+        <div class="home-hero-content">
+            <h1>UPGRADE YOUR <span>STYLE</span></h1>
+            <p>Streetwear & daily fashion made for your lifestyle. <span>Bold designs, premium quality.</span></p>
+
+            <div class="home-hero-actions">
+                <a href="#catalog" class="btn btn-primary">EXPLORE CATALOG</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="catalog" class="catalog-container">
+        <div class="product-card">
+            <div class="product-image">
+                <img src="assets/images/t-shirt.png" alt="t-shirt">
+                <div class="overlay">
+                    <button class="view-btn">Quick View</button>
+                </div>
+            </div>
+            <div class="product-info">
+                <h3>T-Shirt</h3>
+                <p class="category">Tops</p>
+                <p class="price">Rp180.000</p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="assets/images/hoodie.png" alt="Hoodie">
+                <div class="overlay">
+                    <button class="view-btn">Quick View</button>
+                </div>
+            </div>
+            <div class="product-info">
+                <h3>Hoodie</h3>
+                <p class="category">Outerwear</p>
+                <p class="price">Rp250.000</p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="assets/images/jacket.png" alt="Jacket">
+                <div class="overlay">
+                    <button class="view-btn">Quick View</button>
+                </div>
+            </div>
+            <div class="product-info">
+                <h3>Jacket</h3>
+                <p class="category">Outerwear</p>
+                <p class="price">Rp300.000</p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="assets/images/pants.png" alt="pants">
+                <div class="overlay">
+                    <button class="view-btn">Quick View</button>
+                </div>
+            </div>
+            <div class="product-info">
+                <h3>Trousers</h3>
+                <p class="category">Pants</p>
+                <p class="price">Rp250.000</p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="assets/images/accessories.png" alt="Accessories">
+                <div class="overlay">
+                    <button class="view-btn">Quick View</button>
+                </div>
+            </div>
+            <div class="product-info">
+                <h3>Hat</h3>
+                <p class="category">Accessories</p>
+                <p class="price">Rp150.000</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
